@@ -14,11 +14,15 @@ Using the [Rust and WebAssembly Working Group](https://github.com/rustwasm)'s `w
    ```
    wasm-pack build --target bundler
    ```
-3. Serve the site:
+3. Install webpack:
+   ```
+   npm i -D webpack@5 webpack-cli@5 webpack-dev-server@4 copy-webpack-plugin@11
+   ```
+4. Serve the site:
    ```
    cd site
    ```
    ```
    npm run serve
    ```
-4. All done! Navigate to `http://localhost:8080`, and you should see a pop-up: `Hello, WebAssembly with npm!`
+5. All done! Navigate to `http://localhost:8080`, and you should see a pop-up: `Hello, WebAssembly with npm!`
